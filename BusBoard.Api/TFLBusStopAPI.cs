@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using RestSharp;
 using RestSharp.Authenticators;
 using System.Linq;
+using BusBoard.Web;
+using BusBoard.Web.Models;
 
-namespace BusBoard.ConsoleApp
+namespace BusBoard.Api
 {
     public class TFLBusStopAPI
     {
@@ -65,7 +67,6 @@ namespace BusBoard.ConsoleApp
                 Resource = "StopPoint/Meta/StopTypes"
             };
             var response = client.Execute<List<string>>(request);
-
             return response.Data;
         }
     }

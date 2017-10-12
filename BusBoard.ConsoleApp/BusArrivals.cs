@@ -1,8 +1,9 @@
-﻿using System;
+﻿using BusBoard.Web.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BusBoard.ConsoleApp
+namespace BusBoard.Web.Models
 {
     public class BusArrivals
     {

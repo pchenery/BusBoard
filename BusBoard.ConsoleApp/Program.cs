@@ -1,4 +1,7 @@
-﻿using System;
+﻿using BusBoard.Web;
+using BusBoard.Web.Models;
+using BusBoard.Web.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -27,6 +30,7 @@ namespace BusBoard.ConsoleApp
             List<BusArrivalInfo> busInfo = busArr.GetBusArrivalsByPostcode(postcode, Convert.ToInt32(stopNumber));
 
             Console.WriteLine(string.Join("\n", busInfo.Select(b => b.StopLetter + " - " + b.StopName + " - " + b.RouteNumber + " - " + b.TimeToArrival).ToList()));
+            Console.ReadLine();
         }
   }
 }

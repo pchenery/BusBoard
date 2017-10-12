@@ -1,12 +1,11 @@
 ﻿using System;
-namespace BusBoard.ConsoleApp
+
+namespace BusBoard.Web.Models
 {
     public class ArrivalInfo
     {
         public string LineName {get; set;}
-
         public int TimeToStation { get; set; }
-        
         public string DestinationName { get; set; }
         public string TimeToStationInMins
         {

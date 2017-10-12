@@ -152,8 +152,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ArrivalInfo.cs" />
+    <Compile Include="Models\PostCode.cs" />
     <Compile Include="Models\PostcodeSelection.cs" />
+    <Compile Include="Models\StopPoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\BusArrivalInfo.cs" />
     <Compile Include="ViewModels\BusInfo.cs" />
   </ItemGroup>
   <ItemGroup>
