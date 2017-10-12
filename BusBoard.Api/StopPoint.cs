@@ -1,5 +1,5 @@
 ﻿using System;
-namespace BusBoard.Web.Models
+namespace BusBoard.Api
 {
     public class StopPoint
     {

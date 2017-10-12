@@ -4,5 +4,7 @@
   {
     public string Postcode { get; set; }
 
+    public string NumberofStops { get; set; }
+
   }
 }

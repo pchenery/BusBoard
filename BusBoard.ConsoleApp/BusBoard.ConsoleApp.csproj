@@ -47,7 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusArrivals.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -56,8 +55,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BusBoard.Api\BusBoard.Api.csproj">
+      <Project>{904861a6-1fe9-42c1-b7b3-9fa42bab5df1}</Project>
+      <Name>BusBoard.Api</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BusBoard.Web\BusBoard.Web.csproj">
-      <Project>{E393DBB4-F3EF-4683-B737-0165AD5853A1}</Project>
+      <Project>{e393dbb4-f3ef-4683-b737-0165ad5853a1}</Project>
       <Name>BusBoard.Web</Name>
     </ProjectReference>
   </ItemGroup>

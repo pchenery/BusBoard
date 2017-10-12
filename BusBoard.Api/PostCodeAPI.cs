@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using RestSharp;
-using RestSharp.Authenticators;
-using System.Linq;
-using BusBoard.Web.Models;
 
 namespace BusBoard.Api
 {

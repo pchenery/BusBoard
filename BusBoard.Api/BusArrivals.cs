@@ -1,9 +1,7 @@
-﻿using BusBoard.Web.ViewModels;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace BusBoard.Web.Models
+namespace BusBoard.Api
 {
     public class BusArrivals
     {
@@ -38,7 +36,7 @@ namespace BusBoard.Web.Models
                 // for each arrival info - first order list by timetoarrival
                 foreach (ArrivalInfo arrInfo in arrInfoList.OrderBy(a => a.TimeToStation).ToList())
                 {
-                    // Create new BusArrivalInfo
+                    // Create new BusInfo
                     BusArrivalInfo busArrival = new BusArrivalInfo()
                     {
                         StopName = stop.commonName,
@@ -54,7 +52,7 @@ namespace BusBoard.Web.Models
                 }
             }
 
-            // return list of bus arrival info
+            // return list of bus info
             return arrivals;
         }
     }
